@@ -361,3 +361,15 @@ main {
   font-size: 15px;
   line-height: 1.4;
 }
+
+
+/* 当页面放大、可视宽度变小（例如 <= 1300px）时自动重置布局 */
+@media (max-width: 1300px) {
+  .shift-image-1950 .timeline-item__visual,
+  .shift-text-1970 .timeline-item__content,
+  .shift-image-2010 .timeline-item__visual,
+  .shift-text-2010 .timeline-item__content {
+    margin-top: 0 !important; 
+  }
+}
+
