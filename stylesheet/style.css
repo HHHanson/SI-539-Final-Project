@@ -465,3 +465,37 @@ main {
   outline: 3px solid black !important;
   outline-offset: 4px;
 }
+
+.img-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img-hover:hover img,
+.img-hover:focus img {
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.img-hover:hover .img-overlay,
+.img-hover:focus .img-overlay {
+    opacity: 1;
+}
+
+.img-hover:focus {
+    outline: 3px solid #4C6EF5;
+    outline-offset: 4px;
+}
